@@ -1,0 +1,2 @@
+docs/ — документы
+license.jpg, lena-diploma.jpg, lena-accreditation.jpg, lena-course.jpg, lena-upgrade.jpg, denis-diploma.jpg, denis-accreditation.jpg, denis-upgrade.jpg, price.pdf, contract.pdf.

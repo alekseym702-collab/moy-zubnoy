@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B3A43">
+<title>Мой Зубной — лечение и протезирование зубов | частная стоматология</title>
+<meta name="description" content="Небольшая частная стоматология «Мой Зубной»: лечение и протезирование зубов. Запись по телефону у администратора.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="tooth" viewBox="0 0 40 50"><path d="M20 4c-3.4 0-5.4 2.2-9 2.2C6.8 6.2 2 9.6 2 15.4c0 5.4 2.4 9.8 4 13.4 1.6 3.7 2.6 9.4 3.6 13.7.5 2.3 1.6 3.5 3 3.5 2.6 0 2.2-6.4 3.4-10.6.6-2.2 1.8-3.4 4-3.4s3.4 1.2 4 3.4c1.2 4.2.8 10.6 3.4 10.6 1.4 0 2.5-1.2 3-3.5 1-4.3 2-10 3.6-13.7 1.6-3.6 4-8 4-13.4 0-5.8-4.8-9.2-9-9.2-3.6 0-5.6-2.2-9-2.2z"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.6 4 2.3-.8 1.3L11 13V7h2v5.6z"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+<symbol id="doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 6V3.5L18.5 8H14zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></symbol>
+</svg>
+
+<!-- ВЕРХНЯЯ ПОЛОСА -->
+<div class="topbar">
+  <div class="wrap">
+    <div>📍 <span class="ph">[город, улица, дом]</span> · <span class="ph">[__:__ — __:__]</span></div>
+    <div class="a11y-wrap">
+      <button class="a11y-btn" id="a11yBtn" aria-expanded="false" aria-controls="a11yPanel">👁 Версия для слабовидящих</button>
+      <div class="a11y-panel" id="a11yPanel" hidden>
+        <p>Размер текста</p>
+        <div class="a11y-row">
+          <button data-size="0" class="active" aria-label="Обычный шрифт">A</button>
+          <button data-size="1" aria-label="Крупный шрифт">A+</button>
+          <button data-size="2" aria-label="Очень крупный шрифт">A++</button>
+        </div>
+        <label><input type="checkbox" id="a11yContrast"> Контрастные цвета</label>
+        <label><input type="checkbox" id="a11yNoImg"> Без изображений</label>
+        <button class="reset" id="a11yReset">Сбросить настройки</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ШАПКА -->
+<header id="hdr">
+  <div class="wrap head-in">
+    <a class="logo" href="index.html" aria-label="Мой Зубной — главная">
+      <span class="logo-mark"><svg><use href="#tooth"/></svg></span>
+      <span class="logo-text">Мой Зубной<small>стоматология</small></span>
+    </a>
+    <nav id="nav" aria-label="Основное меню">
+      <button class="nav-close" id="navClose" style="display:none" aria-label="Закрыть меню">×</button>
+      <a href="#uslugi">Услуги</a>
+      <a href="#vrachi">Врачи</a>
+      <a href="#tseny">Цены</a>
+      <a href="#dokumenty">Документы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="head-phone"><b><span class="ph">+7 (___) ___-__-__</span></b><small>запись по телефону</small></div>
+    <a class="btn btn-solid head-cta" href="tel:+70000000000"><svg><use href="#phone"/></svg>Записаться</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu-veil" id="menuVeil"></div>
+
+<main id="main">
+
+<!-- ПЕРВЫЙ ЭКРАН: ФОНО КЛИНИКИ / КАБИНЕТА -->
+<section class="hero" id="top">
+  <div class="hero-media">
+  <div class="hero-media">
+    <img src="img/01-hero.jpg" alt="Лечебный кабинет клиники «Мой Зубной»">
+  </div>
+  </div>
+  <div class="hero-veil"></div>
+  <div class="wrap hero-in">
+    <div class="hero-inner">
+      <p class="eyebrow">Частная стоматологическая клиника</p>
+      <h1 class="h1">Ваш зубной —<br><em>рядом и по имени</em></h1>
+      <p class="lead">«Мой Зубной» — небольшая клиника, где два врача знают своих пациентов лично. Лечим и протезируем спокойно, обстоятельно и без конвейера.</p>
+      <div class="hero-cta">
+        <a class="btn btn-mint" href="tel:+70000000000"><svg><use href="#phone"/></svg>Позвонить администратору</a>
+        <a class="btn btn-light" href="#tseny">Смотреть цены</a>
+      </div>
+      <div class="hero-meta">
+        <div>Запись по телефону: <span class="ph">+7 (___) ___-__-__</span></div>
+        <div>Режим работы: <span class="ph">[дни недели]</span>, <span class="ph">[__ : __ — __ : __]</span></div>
+      </div>
+      <p class="hero-legal">Лицензия на медицинскую деятельность <span class="ph">№ [вставьте]</span> от <span class="ph">[дата]</span></p>
+    </div>
+  </div>
+  <div class="hero-chip">Принимают: <b>Лена</b> — лечение зубов<br><b>Денис</b> — протезирование</div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Лечение кариеса</span><span>Каналы</span><span>Реставрация</span><span>Коронки</span><span>Виниры</span><span>Съёмные протезы</span><span>Гигиена</span><span>Консультации</span>
+    <span>Лечение кариеса</span><span>Каналы</span><span>Реставрация</span><span>Коронки</span><span>Виниры</span><span>Съёмные протезы</span><span>Гигиена</span><span>Консультации</span>
+  </div>
+</div>
+
+<!-- ЦИФРЫ -->
+<section class="section">
+  <div class="wrap stats">
+    <div class="stat rv"><div class="num"><span class="count" data-to="2">2</span></div><p>зубных врача ведут приём</p></div>
+    <div class="stat rv"><div class="num"><span class="count" data-to="100">100</span>%</div><p>стерилизация инструментов</p></div>
+    <div class="stat rv"><div class="num"><span class="ph">[лет]</span></div><p>практики наших врачей</p></div>
+    <div class="stat rv"><div class="num"><span class="ph">[число]</span></div><p>пациентов доверяют нам</p></div>
+  </div>
+</section>
+
+<!-- ВРАЧИ -->
+<section class="section alt" id="vrachi">
+  <div class="wrap">
+    <p class="eyebrow">Наша команда</p>
+    <h2 class="h2">Два врача, которым не всё равно</h2>
+    <p class="lead rv">Каждый ведёт своего пациента от первого осмотра до результата — и помнит его историю.</p>
+    <div class="doctors" style="margin-top:32px">
+      <article class="doc-card rv">
+        <!-- ФОТО-02: портрет Лены в форме, светлый фон, 3:4 -->
+        <div class="slot"><svg><use href="#tooth"/></svg><b>ФОТО-02</b><span>Портрет Лены в медицинской форме</span></div>
+        <div class="doc-body">
+          <h3>Лена</h3><span class="role">Зубной врач</span>
+          <p><span class="ph">[Ф.И.О. полностью]</span></p>
+          <p>Ведёт лечение зубов: кариес, каналы, реставрация. Всегда объясняет, что и зачем делает.</p>
+          <div class="facts">
+            <div>Стаж: <span class="ph">[вставьте]</span></div>
+            <div>Образование: <span class="ph">[вуз, год]</span></div>
+            <div>Аккредитация: <span class="ph">[номер, срок]</span></div>
+          </div>
+          <a class="btn btn-ghost" href="tel:+70000000000">Записаться к Лене</a>
+        </div>
+      </article>
+      <article class="doc-card rv">
+        <!-- ФОТО-03: портрет Дениса в форме, светлый фон, 3:4 -->
+        <div class="slot"><svg><use href="#tooth"/></svg><b>ФОТО-03</b><span>Портрет Дениса в медицинской форме</span></div>
+        <div class="doc-body">
+          <h3>Денис</h3><span class="role">Зубной врач</span>
+          <p><span class="ph">[Ф.И.О. полностью]</span></p>
+          <p>Ведёт протезирование: коронки, виниры, съёмные протезы. Подбирает форму и цвет так, чтобы всё выглядело как свои зубы.</p>
+          <div class="facts">
+            <div>Стаж: <span class="ph">[вставьте]</span></div>
+            <div>Образование: <span class="ph">[вуз, год]</span></div>
+            <div>Аккредитация: <span class="ph">[номер, срок]</span></div>
+          </div>
+          <a class="btn btn-ghost" href="tel:+70000000000">Записаться к Денису</a>
+        </div>
+      </article>
+    </div>
+    <p class="doc-hint">Дипломы, аккредитации и сертификаты врачей — в разделе <a href="#dokumenty" style="text-decoration:underline">«Документы»</a> ниже.</p>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="section" id="uslugi">
+  <div class="wrap">
+    <p class="eyebrow">Услуги</p>
+    <h2 class="h2">Два направления — одна клиника</h2>
+    <p class="lead rv">Лечим и восстанавливаем зубы в одном месте: меньше перемещений, один план лечения, одна команда.</p>
+
+    <div style="margin-top:32px">
+      <div class="dir rv">
+          <img src="img/06-treatment.jpg" alt="Лечение зуба">
+        </div>
+        <div>
+          <h3>Лечение зубов</h3>
+          <p class="who">Приём ведёт <b>Лена</b> · зубной врач</p>
+          <ul class="plist">
+            <li>Консультация и план лечения<i class="dots"></i><span class="cost"><span class="ph">[цена]</span></span></li>
+            <li>Лечение кариеса<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Лечение пульпита, каналы<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Художественная реставрация<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Профессиональная гигиена<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Анестезия<i class="dots"></i><span class="cost"><span class="ph">[цена]</span></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dir flip rv">
+          <img src="img/07-prosthesis.jpg" alt="Протезирование зубов">
+        </div>
+        <div>
+          <h3>Протезирование</h3>
+          <p class="who">Приём ведёт <b>Денис</b> · зубной врач</p>
+          <ul class="plist">
+            <li>Консультация по протезированию<i class="dots"></i><span class="cost"><span class="ph">[цена]</span></span></li>
+            <li>Коронка металлокерамическая<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Коронка из диоксида циркония<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Вкладка / винир<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Съёмный протез<i class="dots"></i><span class="cost">от <span class="ph">[цена]</span></span></li>
+            <li>Временная коронка<i class="dots"></i><span class="cost"><span class="ph">[цена]</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЭТАПЫ -->
+<section class="section alt">
+  <div class="wrap steps-grid">
+    <div class="steps-left">
+      <p class="eyebrow">Просто и понятно</p>
+      <h2 class="h2">Как проходит приём</h2>
+      <p class="lead rv">Позвонили — пришли — вылечили. Остальное берём на себя.</p>
+      <a class="btn btn-solid rv" href="tel:+70000000000" style="margin-top:22px">Записаться по телефону</a>
+    </div>
+    <div>
+      <div class="step rv"><span class="step-num">01</span><div><h4>Звонок администратору</h4><p>Администратор ответит на вопросы, подберёт удобное время и запишет на приём.</p></div></div>
+      <div class="step rv"><span class="step-num">02</span><div><h4>Осмотр и план лечения</h4><p>Врач объяснит ситуацию и назовёт точную стоимость ещё до начала лечения.</p></div></div>
+      <div class="step rv"><span class="step-num">03</span><div><h4>Лечение или протезирование</h4><p>С современной анестезией, спокойно. Каждый этап врач комментирует простыми словами.</p></div></div>
+      <div class="step rv"><span class="step-num">04</span><div><h4>Рекомендации и наблюдение</h4><p>После приёма — рекомендации по уходу. О визите напомнит администратор.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- БЕЗОПАСНОСТЬ -->
+<section class="section">
+  <div class="wrap split">
+    <img src="img/04-sterile.jpg" alt="Стерилизация инструментов">
+    </div>
+    <div>
+      <p class="eyebrow">Безопасность</p>
+      <h2 class="h2">Чистота, которую видно</h2>
+      <p class="lead rv">За стерильность отвечает наша медсестра <span class="ph">[имя]</span>. Каждый инструмент проходит полный цикл обработки по нормам СанПиН.</p>
+      <ul class="checks">
+        <li class="rv"><span class="tick">✓</span>Три этапа: дезинфекция, очистка, стерилизация в автоклаве</li>
+        <li class="rv"><span class="tick">✓</span>Одноразовые иглы, салфетки и расходники</li>
+        <li class="rv"><span class="tick">✓</span>Стерильная упаковка вскрывается при вас</li>
+        <li class="rv"><span class="tick">✓</span>Обработка кабинета после каждого пациента</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section class="section alt" id="tseny">
+  <div class="wrap">
+    <p class="eyebrow">Честные цены</p>
+    <h2 class="h2">Прайс-лист</h2>
+    <p class="lead rv">Прайс утверждён приказом <span class="ph">№ [номер] от [дата]</span>. Точную стоимость врач назовёт после осмотра — до начала работ.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px" class="price-tables">
+      <div class="table-scroll rv">
+        <table class="ptable"><caption>Лечение зубов</caption>
+          <tr><td>Консультация</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Анестезия</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Лечение кариеса</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Лечение пульпита, 1 канал</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Реставрация зуба</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Профессиональная гигиена</td><td><span class="ph">[цена]</span></td></tr>
+        </table>
+      </div>
+      <div class="table-scroll rv">
+        <table class="ptable"><caption>Протезирование</caption>
+          <tr><td>Консультация по протезированию</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Коронка металлокерамическая</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Коронка из диоксида циркония</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Вкладка культевая</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Съёмный протез</td><td><span class="ph">[цена]</span></td></tr>
+          <tr><td>Временная коронка</td><td><span class="ph">[цена]</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <p class="price-note rv">Цены в рублях, не являются публичной офертой. Итоговая стоимость определяется после осмотра.</p>
+    <div style="margin-top:20px" class="rv"><a class="btn btn-ghost" href="docs/price.pdf">Скачать прайс-лист PDF</a> <span class="ph">[загрузить файл docs/price.pdf]</span></div>
+  </div>
+</section>
+
+<!-- ЗАПИСЬ У АДМИНИСТРАТОРА -->
+<section class="section admin">
+  <div class="wrap admin-grid">
+    <div class="rv">
+      <p class="eyebrow" style="color:var(--mint)">Запись на приём</p>
+      <h2>Запись у администратора</h2>
+      <p>Позвоните — администратор подберёт удобное время, ответит на вопросы о лечении и подготовке к визиту, а накануне напомнит о приёме. Никаких ботов: только живой разговор.</p>
+    </div>
+    <div class="admin-call rv">
+      <span class="big"><span class="ph">+7 (___) ___-__-__</span></span>
+      <a class="btn btn-mint" href="tel:+70000000000"><svg><use href="#phone"/></svg>Позвонить администратору</a>
+      <small>Звонки принимаем <span class="ph">[дни]</span>, <span class="ph">[__ : __ — __ : __]</span></small>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Частые вопросы</p>
+    <h2 class="h2" style="text-align:center">Отвечаем честно</h2>
+    <div class="faq">
+      <div class="faq-item rv"><button class="faq-q" aria-expanded="false">Это больно?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Все процедуры проходят с современной анестезией. Врач начнёт лечение только тогда, когда зуб полностью «уснёт». Если вы волнуетесь — скажите при записи, уделим больше времени спокойному знакомству.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q" aria-expanded="false">Сколько стоит консультация?<span class="plus">+</span></button>
+        <div class="faq-a"><p><span class="ph">[вставьте условия: бесплатно / стоимость]</span>. По итогам врач составит план лечения с точной стоимостью — решение остаётся за вами.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q" aria-expanded="false">Можно ли оплатить протезирование частями?<span class="plus">+</span></button>
+        <div class="faq-a"><p><span class="ph">[вставьте: есть ли рассрочка или поэтапная оплата и на каких условиях]</span>.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q" aria-expanded="false">Что взять на первый приём?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Паспорт — для договора и медицинской карты. Если есть свежие снимки или КТ зубов, возьмите их с собой.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q" aria-expanded="false">Как стерилизуются инструменты?<span class="plus">+</span></button>
+        <div class="faq-a"><p>В три этапа: дезинфекция, очистка и стерилизация в автоклаве. Инструменты в герметичной упаковке вскрываются при вас. Одноразовые материалы не используются повторно.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q" aria-expanded="false">Сколько длится протезирование?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Зависит от работы: коронка — в среднем <span class="ph">[срок]</span>, съёмный протез — <span class="ph">[срок]</span>. Точный график визитов врач составит на консультации.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ДОКУМЕНТЫ И СЕРТИФИКАТЫ -->
+<section class="section alt" id="dokumenty">
+  <div class="wrap">
+    <p class="eyebrow">Лицензии и сертификаты</p>
+    <h2 class="h2">Документы клиники и врачей</h2>
+    <p class="lead rv">Здесь опубликованы лицензия на медицинскую деятельность, дипломы, сведения об аккредитации, сертификаты об окончании курсов и удостоверения о повышении квалификации. Нажмите на документ, чтобы открыть его.</p>
+
+    <div class="doc-filter" role="group" aria-label="Фильтр документов">
+      <button class="filter-btn active" data-filter="all">Все документы</button>
+      <button class="filter-btn" data-filter="clinic">Клиника</button>
+      <button class="filter-btn" data-filter="lena">Лена</button>
+      <button class="filter-btn" data-filter="denis">Денис</button>
+    </div>
+
+    <div class="gallery">
+      <!-- Заменяйте .slot внутри .cert на <img src="../docs/файл.jpg" alt="..."> -->
+      <button class="cert rv" data-type="clinic" data-code="DOC-01" data-title="Лицензия на медицинскую деятельность" data-desc="Скан лицензии клиники: номер, дата выдачи, срок действия, перечень работ.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-01</b><span>Скан лицензии клиники</span></div>
+        <div class="cert-meta"><b>Лицензия клиники</b><small>Медицинская деятельность</small></div>
+      </button>
+      <button class="cert rv" data-type="lena" data-code="DOC-02" data-title="Диплом — Лена" data-desc="Скан диплома о высшем медицинском образовании: вуз, специальность, год окончания, номер и серия.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-02</b><span>Диплом о высшем медицинском образовании</span></div>
+        <div class="cert-meta"><b>Диплом · Лена</b><span style="font-size:.75rem">Образование</span></div>
+      </button>
+      <button class="cert rv" data-type="lena" data-code="DOC-03" data-title="Аккредитация — Лена" data-desc="Скан свидетельства об аккредитации специалиста: специальность, номер, дата и срок действия.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-03</b><span>Свидетельство об аккредитации</span></div>
+        <div class="cert-meta"><b>Аккредитация · Лена</b><small>Действующая</small></div>
+      </button>
+      <button class="cert rv" data-type="lena" data-code="DOC-04" data-title="Сертификат курса — Лена" data-desc="Скан сертификата об окончании курса: название программы, учебная организация, даты, количество часов.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-04</b><span>Сертификат об окончании курса</span></div>
+        <div class="cert-meta"><b>Сертификат курса · Лена</b><small>Специализация</small></div>
+      </button>
+      <button class="cert rv" data-type="lena" data-code="DOC-05" data-title="Удостоверение о повышении квалификации — Лена" data-desc="Скан удостоверения о повышении квалификации: программа, организация, объём часов, год.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-05</b><span>Удостоверение о повышении квалификации</span></div>
+        <div class="cert-meta"><b>Повышение квалификации · Лена</b><small>Ежегодное обучение</small></div>
+      </button>
+      <button class="cert rv" data-type="denis" data-code="DOC-06" data-title="Диплом — Денис" data-desc="Скан диплома о высшем медицинском образовании: вуз, специальность, год окончания, номер и серия.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-06</b><span>Диплом о высшем медицинском образовании</span></div>
+        <div class="cert-meta"><b>Диплом · Денис</b><small>Образование</small></div>
+      </button>
+      <button class="cert rv" data-type="denis" data-code="DOC-07" data-title="Аккредитация — Денис" data-desc="Скан свидетельства об аккредитации специалиста: специальность, номер, дата и срок действия.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-07</b><span>Свидетельство об аккредитации</span></div>
+        <div class="cert-meta"><b>Аккредитация · Денис</b><small>Действующая</small></div>
+      </button>
+      <button class="cert rv" data-type="denis" data-code="DOC-08" data-title="Удостоверение о повышении квалификации — Денис" data-desc="Скан удостоверения о повышении квалификации по протезированию: программа, организация, часы, год.">
+        <div class="slot"><svg><use href="#doc"/></svg><b>DOC-08</b><span>Удостоверение о повышении квалификации</span></div>
+        <div class="cert-meta"><b>Повышение квалификации · Денис</b><small>Протезирование</small></div>
+      </button>
+    </div>
+    <p class="doc-hint">Документы обновляются после каждого повышения квалификации и продления аккредитации. Публикация — с письменного согласия сотрудников.</p>
+  </div>
+</section>
+
+<!-- ПАЦИЕНТАМ -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Пациентам</p>
+    <h2 class="h2">Полезная информация</h2>
+    <div class="pats">
+      <div class="pat rv"><h4>К первому визиту</h4><ul><li>Паспорт — для договора</li><li>Снимки / КТ, если есть</li><li>Список принимаемых лекарств</li><li>Приходите за 10 минут</li></ul></div>
+      <div class="pat rv"><h4>Льготные категории</h4><p><span class="ph">[перечень льгот и скидок либо «льготы не предусмотрены» — обязательный пункт по ПП РФ № 736]</span></p></div>
+      <div class="pat rv"><h4>Контроль качества</h4><p>Правила платных услуг: <a href="rules.html" style="text-decoration:underline">читать</a>.<br>Контакты Росздравнадзора и Роспотребнадзора: <span class="ph">[регион — вставлю]</span>.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="section alt" id="kontakty">
+  <div class="wrap">
+    <p class="eyebrow">Контакты</p>
+    <h2 class="h2">Как нас найти</h2>
+    <div class="contacts-grid">
+      <ul class="c-list rv">
+        <li><span class="c-ico"><svg><use href="#pin"/></svg></span><div><b>Адрес</b><span class="ph">[город, улица, дом, этаж]</span></div></li>
+        <li><span class="c-ico"><svg><use href="#phone"/></svg></span><div><b>Телефон · запись</b><span class="ph">+7 (___) ___-__-__</span></div></li>
+        <li><span class="c-ico"><svg><use href="#mail"/></svg></span><div><b>E-mail</b><span class="ph">[e-mail клиники]</span></div></li>
+        <li><span class="c-ico"><svg><use href="#clock"/></svg></span><div><b>Режим работы</b><span class="ph">[дни], __ : __ — __ : __</span></div></li>
+      </ul>
+      <div class="rv">
+        <div class="slot map-slot"><b>Вход в клинику Мой Зубной</b><span>Сюда вставим.Вход в клинику Мой Зубной</span></div>		
+        <div class="slot map-slot"><b>КАРТА</b><span>Сюда вставим код Яндекс.Карт или 2ГИС с меткой клиники</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer>
+  <div class="wrap">
+    <div class="disclaimer">Имеются противопоказания. Необходима консультация специалиста.</div>
+    <div class="foot-grid">
+      <div>
+        <h5>Мой Зубной</h5>
+        <p><span class="ph">[ООО «…» / ИП Ф.И.О.]</span><br>ОГРН <span class="ph">[номер]</span> · ИНН <span class="ph">[номер]</span><br>
+        Юрадрес: <span class="ph">[адрес]</span><br>Лицензия <span class="ph">№ [номер]</span> от <span class="ph">[дата]</span>, выдана <span class="ph">[кем]</span></p>
+      </div>
+      <div><h5>Разделы</h5><ul class="foot-list">
+        <li><a href="#uslugi">Услуги</a></li><li><a href="#vrachi">Врачи</a></li>
+        <li><a href="#tseny">Цены</a></li><li><a href="#dokumenty">Документы и сертификаты</a></li>
+        <li><a href="#kontakty">Контакты</a></li></ul></div>
+      <div><h5>Связь и документы</h5><ul class="foot-list">
+        <li><a href="tel:+70000000000"><span class="ph">+7 (___) ___-__-__</span></a></li>
+        <li><a href="privacy.html">Политика персональных данных</a></li>
+        <li><a href="consent.html">Согласие на обработку ПДн</a></li>
+        <li><a href="rules.html">Правила платных медуслуг</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span class="ph">[год]</span> «Мой Зубной»</div>
+      <div>Информация на сайте не является публичной офертой</div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-solid" href="tel:+70000000000"><svg><use href="#phone"/></svg>Позвонить</a>
+  <a class="btn btn-ghost" href="#tseny">Цены</a>
+</div>
+
+<div class="cookie" id="cookie" role="dialog" aria-label="О cookie">
+  Мы используем cookie для корректной работы сайта. Продолжая пользоваться сайтом, вы соглашаетесь с этим.
+  <button id="cookieOk">Понятно</button>
+</div>
+
+<!-- Просмотр документов -->
+<div class="modal" id="docModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+    <h3 id="modalTitle">Документ</h3>
+    <div class="modal-media">
+      <div class="slot"><svg><use href="#doc"/></svg><b id="modalCode">DOC-01</b><span id="modalDesc"></span></div>
+    </div>
+    <p>Место для скана документа. После загрузки файла здесь откроется его изображение. Перед публикацией закройте персональные данные сотрудников, не относящиеся к квалификации.</p>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
